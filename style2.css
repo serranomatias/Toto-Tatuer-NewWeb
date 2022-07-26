@@ -27,8 +27,8 @@ h1 {
   
   /* Create four equal columns that sits next to each other */
   .column {
-    flex: 25%;
-    max-width: 25%;
+    flex: 50%;
+    max-width: 50%;
     padding: 0 4px;
   }
   
@@ -44,7 +44,7 @@ h1 {
   .column video {
     margin-top: 8px;
     vertical-align: middle;
-    width: 200%;
+    width: 100%;
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
@@ -61,6 +61,21 @@ h1 {
       flex: 100%;
       max-width: 100%;
     }
+    .logo-nav {
+      width: 20px;
+      word-wrap: break-word;
+      text-align: right;
+      visibility: hidden;
+      margin: -500px 20px 30px auto;
+    }
+    .logo-nav:after {
+      content: "TOTO";
+      visibility: visible;
+    }
+    .navbar {
+      margin: 20px;
+      
+    }
   }
 
 
@@ -74,19 +89,21 @@ h1 {
 body {
     background-color: #000;
     color: #fff;
-    width: 100vw;
+    /* width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 30% 70%;
-    grid-template-rows: 100vh;
+    grid-template-rows: 100vh; */
 }
 header {
     width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin: 40px;
     grid-column: 1/2;
+    grid-row: 1/2;
     padding: 30px;
 }
 nav {
@@ -145,3 +162,4 @@ p a {
 .selectedButton {
     background-color: red;
 }
+
