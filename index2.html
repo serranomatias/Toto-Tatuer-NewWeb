@@ -5,30 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
-  <nav>
-    <h1>TOTO TATUER</h1>
-  </nav>
+  <header>
+    <nav>
+        <h1 onclick="resetImg()" class="pointer">TOTO TATUER</h1>
+        <ul id="menu">
+            <li><a class='pointer' id="broken" onclick="hideImgB()">Vidrio</a></li>
+            <li><a class='pointer' id="tatuajes" onclick="subir()">Tattoos</a></li>
+            <li><a class='pointer' id="dir" onclick="hideImgD()">Intervenciones <br>Colaboraciones</a></li>
+        </ul>
+        <ul id="footer">
+            <li><a href="https://www.instagram.com/tototatuer/" target="_blank"><img src="icon-ig.png"></a></li>
+        </ul>
+        <p>All rights reserved x tototatuer.<br> Web design by <a href="https://www.instagram.com/dezure.io" target="_blank">Dezure</a></p>
+    </nav>
+</header>
+    <div class="row">
+      <div class="column">
+        <video src="IMG_9057.mp4" autoplay muted loop></video>
+      </div>
+    </div>
     <div class="row">
         <div class="column">
-          <img src="BrokenCover.JPG">
-          <img src="CazzuCover.jpg">
-          <img src="IMG_8897.jpeg">
-          <img src="Maria.JPEG">
-          <img src="MariaDireccion.JPEG">
-          <img src="MariaDireccion2.JPEG">
-          <img src="MariaDireccion3.JPEG">
+          <img class="img-item broken" src="BrokenCover.JPG">
+          <img class="img-item broken" src="CazzuCover.jpg">
+          <img class="img-item broken" src="IMG_8897.jpeg">
+          <img class="img-item broken" src="Maria.JPEG">
+          <img class="img-item broken" src="MariaDireccion.JPEG">
+          <img class="img-item broken" src="MariaDireccion2.JPEG">
+          <img class="img-item broken" src="MariaDireccion3.JPEG">
         </div>
         <div class="column">
-        <img src="MariaDireccion3.JPEG">
-          <img src="RaimondiCara.jpg">
-          <img src="PinturaPerdon.jpg">
-          <img src="BrokenCover.JPG">
-          <img src="CazzuCover.jpg">
-          <img src="IMG_8897.jpeg">
-          <img src="Maria.JPEG">
+        <img class="img-item broken" src="MariaDireccion3.JPEG">
+          <img class="img-item broken" src="RaimondiCara.jpg">
+          <img class="img-item broken" src="PinturaPerdon.jpg">
+          <img class="img-item broken" src="BrokenCover.JPG">
+          <img class="img-item broken" src="CazzuCover.jpg">
+          <img class="img-item broken" src="IMG_8897.jpeg">
+          <img class="img-item broken" src="Maria.JPEG">
         </div>
         <div class="column">
             <img src="MariaDireccion2.JPEG">

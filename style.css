@@ -17,6 +17,7 @@ body {
 header {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
     margin: 40px;
@@ -154,4 +155,8 @@ ul {
     position: relative;
     bottom: 20%;
     margin-left: 20px;
+}
+
+.broken {
+    width: 30%;
 }
