@@ -67,18 +67,21 @@ h1 {
       text-align: right;
       visibility: hidden;
       margin: -500px 20px 30px auto;
+      vertical-align: middle;
     }
     .logo-nav:after {
-      content: "TOTO";
+      content: "TOTO TATUER";
       visibility: visible;
     }
     .navbar {
       margin: 20px;
       
     }
+    #menu, #footer, #rights {
+      display: none;
+    }
+
   }
-
-
   * {
     margin: 0;
     box-sizing: border-box;
@@ -112,6 +115,7 @@ nav {
 nav h1 {
     margin-bottom: 50px;
     letter-spacing: 0.1em;
+    text-align: right;
 }
 #menu li a {
     text-decoration: none;
