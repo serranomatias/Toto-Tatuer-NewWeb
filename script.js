@@ -72,16 +72,17 @@ function hideImgD(){
         resetImg();
     }
 }
-function hideImgP(){
+function hideImgT(){
     if(isSelected3 == false) {
         resetImg();
-        document.getElementById('pintura').classList.add('selectedButton');
+        document.getElementById('tatuajes').classList.add('selectedButton');
         for(i=0;i<galleryImgs.length;i++)
-            if(galleryImgs[i].classList.contains('pintura')) {
+            if(galleryImgs[i].classList.contains('tattoo')) {
+                galleryImgs[i].classList.add('achicar');
         } else {
             galleryImgs[i].classList.add('hidden-img');
         } 
-        isSelected3 = false;
+        isSelected3 = true;
     } else {
         resetImg();
     }
@@ -96,9 +97,11 @@ function resetImg(){
     isSelected3 = false;
     document.getElementById('broken').classList.remove('selectedButton');
     document.getElementById('dir').classList.remove('selectedButton');
-    document.getElementById('pintura').classList.remove('selectedButton');
+    document.getElementById('tatuajes').classList.remove('selectedButton');
+    
     for(i=0;i<galleryImgs.length;i++){
         galleryImgs[i].classList.remove('hidden-img');
+        document.getElementById('tatuajes').classList.remove('achicar');
     }
     }
 

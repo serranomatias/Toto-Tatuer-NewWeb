@@ -80,7 +80,6 @@ h1 {
     #menu, #footer, #rights {
       display: none;
     }
-
   }
   * {
     margin: 0;
@@ -166,5 +165,13 @@ p a {
 
 .selectedButton {
     background-color: red;
+}
+
+.achicar {
+  width: 20% !important;
+}
+
+.achicar:hover {
+  width: 100% !important;
 }
 
