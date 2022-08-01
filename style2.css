@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body {
     background-color: #000;
@@ -15,9 +16,12 @@ h1 {
   color: #fff;
   text-align: center;
 }
+#logo {
+  cursor: pointer;
+}
 
 .row {
-    width: 100%;
+    width: 70vw;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -30,8 +34,8 @@ h1 {
   
   /* Create four equal columns that sits next to each other */
   .column {
-    flex: 100%;
-    max-width: 100%;
+    flex: 100vw;
+    max-width: 100vw;
     padding: 0 4px;
     margin: 0 10px;
   }
@@ -39,6 +43,7 @@ h1 {
   .column img {
     margin-top: 8px;
     vertical-align: middle;
+    width: 100%;
     max-width: 500px;
   }
   .column img:hover {
@@ -163,7 +168,7 @@ p a {
       max-width: 100%;
     }
     .column video {
-      width: 100vw;
+      width: 100%;
       height: 100vh;
     }
     .logo-nav {
@@ -183,6 +188,51 @@ p a {
       
     }
     #menu, #footer, #rights {
-      display: none;
+      position: fixed;
+      top: 50%;
+      left: 0px;
+      width: 100vw;
+      height: 100vh;
+
     }
   }
+
+
+/* 
+  .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+  } */
+
+
+  #menu_on{
+    display: inline-block;
+    width:30px;
+    height: 20px;
+    position: relative;
+    z-index: 200;
+  }
+   
+  #menu_on span{
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    background: #fff;
+    transition: all 0.25s ease; /* Propiedades a animar | Tiempo | Tipo animación*/
+    transform-origin : 0px 100%;
+  }
+   
+  #menu_on span:nth-child(2){
+    top: calc(50% - 2px);
+  }
+   
+  #menu_on span:nth-child(3){
+  bot

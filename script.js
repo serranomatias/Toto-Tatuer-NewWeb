@@ -27,9 +27,9 @@ var divAsientos = document.getElementById("div_asientos");
 
 // function hideImg(){
 //     for(i=0;i<galleryImgs.length;i++)
-//         if(galleryImgs[i].classList.contains('dir-img')) {
+//         if(galleryImgs[i].classList.contains('colabs-img')) {
 //             galleryImgs[i].classList.add('hidden-img');
-//             console.log('se escondio img dir-img');
+//             console.log('se escondio img colabs-img');
 //         } else if(galleryImgs[i].classList.contains('pintura')) {
 //             galleryImgs[i].classList.add('hidden-img');
 //             console.log('se escondio img pintura');
@@ -61,9 +61,9 @@ function hideImgB(){
 function hideImgD(){
     if(isSelected2 == false) {
         resetImg();
-        document.getElementById('dir').classList.add('selectedButton');
+        document.getElementById('colabs').classList.add('selectedButton');
         for(i=0;i<galleryImgs.length;i++)
-            if(galleryImgs[i].classList.contains('dir-img')) {
+            if(galleryImgs[i].classList.contains('colabs')) {
         } else {
             galleryImgs[i].classList.add('hidden-img');
         }
@@ -96,7 +96,7 @@ function resetImg(){
     isSelected2 = false;
     isSelected3 = false;
     document.getElementById('broken').classList.remove('selectedButton');
-    document.getElementById('dir').classList.remove('selectedButton');
+    document.getElementById('colabs').classList.remove('selectedButton');
     document.getElementById('tatuajes').classList.remove('selectedButton');
     
     for(i=0;i<galleryImgs.length;i++){
