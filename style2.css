@@ -176,7 +176,7 @@ p a {
       word-wrap: break-word;
       text-align: right;
       visibility: hidden;
-      margin: -500px 20px 30px auto;
+      margin: 0px 20px 260% auto;
       vertical-align: middle;
     }
     .logo-nav:after {
@@ -188,12 +188,7 @@ p a {
       
     }
     #menu, #footer, #rights {
-      position: fixed;
-      top: 50%;
-      left: 0px;
-      width: 100vw;
-      height: 100vh;
-
+      display: hidden;
     }
   }
 
@@ -234,5 +229,5 @@ p a {
     top: calc(50% - 2px);
   }
    
-  #menu_on span:nth-child(3){
-  bot
+  /* #menu_on span:nth-child(3){
+  bot */
