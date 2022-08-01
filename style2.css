@@ -17,8 +17,11 @@ h1 {
 }
 
 .row {
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     padding: 0 4px;
     grid-column: 2/3;
     align-items: center;
@@ -27,60 +30,29 @@ h1 {
   
   /* Create four equal columns that sits next to each other */
   .column {
-    flex: 50%;
-    max-width: 50%;
+    flex: 100%;
+    max-width: 100%;
     padding: 0 4px;
+    margin: 0 10px;
   }
   
   .column img {
     margin-top: 8px;
     vertical-align: middle;
-    width: 100%;
+    max-width: 500px;
   }
   .column img:hover {
     opacity: 0.5;
   }
   
   .column video {
-    margin-top: 8px;
+    margin-top: 8px auto;
     vertical-align: middle;
     width: 100%;
+    height: 100vh;
+
   }
   
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-    .logo-nav {
-      width: 20px;
-      word-wrap: break-word;
-      text-align: right;
-      visibility: hidden;
-      margin: -500px 20px 30px auto;
-      vertical-align: middle;
-    }
-    .logo-nav:after {
-      content: "TOTO TATUER";
-      visibility: visible;
-    }
-    .navbar {
-      margin: 20px;
-      
-    }
-    #menu, #footer, #rights {
-      display: none;
-    }
-  }
   * {
     margin: 0;
     box-sizing: border-box;
@@ -156,7 +128,7 @@ p a {
 }
 
 .pointer {
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 .hidden-img {
@@ -167,11 +139,50 @@ p a {
     background-color: red;
 }
 
-.achicar {
+/* .achicar {
   width: 20% !important;
 }
 
 .achicar:hover {
   width: 100% !important;
-}
+} */
 
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .column video {
+      width: 100vw;
+      height: 100vh;
+    }
+    .logo-nav {
+      width: 20px;
+      word-wrap: break-word;
+      text-align: right;
+      visibility: hidden;
+      margin: -500px 20px 30px auto;
+      vertical-align: middle;
+    }
+    .logo-nav:after {
+      content: "TOTO TATUER";
+      visibility: visible;
+    }
+    .navbar {
+      margin: 20px;
+      
+    }
+    #menu, #footer, #rights {
+      display: none;
+    }
+  }
