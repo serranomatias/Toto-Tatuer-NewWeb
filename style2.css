@@ -44,10 +44,10 @@ h1 {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
   }
   .column img:hover {
-    opacity: 0.5;
+    opacity: 1;
   }
   
   .column video {
@@ -144,13 +144,13 @@ p a {
     background-color: red;
 }
 
-/* .achicar {
+.achicar {
   width: 20% !important;
 }
 
 .achicar:hover {
   width: 100% !important;
-} */
+}
 
 
   /* Responsive layout - makes a two column-layout instead of four columns */
