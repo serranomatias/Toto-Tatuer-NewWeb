@@ -43,10 +43,12 @@ let isSelected2 = false;
 let isSelected3 = false;
 function hideImgT(){
     document.getElementById('tatuajes').scrollTop = 0;
+    OpenMenu();
 }
 function hideImgB(){
     if(isSelected == false) {
         resetImg();
+        OpenMenu();
         document.getElementById('broken').classList.add('selectedButton');
     for(i=0;i<galleryImgs.length;i++)
         if(galleryImgs[i].classList.contains('broken')) {
@@ -61,6 +63,7 @@ function hideImgB(){
 function hideImgD(){
     if(isSelected2 == false) {
         resetImg();
+        OpenMenu();
         document.getElementById('colabs').classList.add('selectedButton');
         for(i=0;i<galleryImgs.length;i++)
             if(galleryImgs[i].classList.contains('colabs')) {
@@ -75,6 +78,7 @@ function hideImgD(){
 function hideImgT(){
     if(isSelected3 == false) {
         resetImg();
+        OpenMenu();
         document.getElementById('tatuajes').classList.add('selectedButton');
         for(i=0;i<galleryImgs.length;i++)
             if(galleryImgs[i].classList.contains('tattoo')) {
@@ -108,4 +112,12 @@ function resetImg(){
 function subir() {
     // document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+
+function CloseMenu() {
+    document.getElementById('header-responsive').classList.add('close-menu')
+}
+
+function OpenMenu() {
+    document.getElementById("header-responsive").classList.toggle('close-menu');
 }
