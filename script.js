@@ -102,10 +102,10 @@ function resetImg(){
     document.getElementById('broken').classList.remove('selectedButton');
     document.getElementById('colabs').classList.remove('selectedButton');
     document.getElementById('tatuajes').classList.remove('selectedButton');
-    
     for(i=0;i<galleryImgs.length;i++){
         galleryImgs[i].classList.remove('hidden-img');
-        document.getElementById('tatuajes').classList.remove('achicar');
+        galleryImgs[i].classList.remove('achicar');
+        document.getElementById('tattoo').classList.remove('achicar');
     }
     }
 
