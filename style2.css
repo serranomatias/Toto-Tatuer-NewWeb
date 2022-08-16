@@ -160,12 +160,23 @@ p a {
   width: 100% !important;
 } */
 
-
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+  }
+}
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
     .column {
       flex: 100%;
       max-width: 100%;
+    }
+    h1 {
+      font-size: 2em;
+      color: #fff;
+      text-align: center;
     }
   }
   
