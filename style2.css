@@ -89,18 +89,11 @@ header {
 }
 nav {
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
 }
 nav h1 {
     margin-bottom: 50px;
     letter-spacing: 0.1em;
     text-align: right;
-}
-nav img { 
-  width: 200px;
-  margin: 0 0 30px 0;
 }
 #menu li a {
     text-decoration: none;
@@ -204,7 +197,15 @@ p a {
     }
     .logo-nav {
       width: 20px;
-      /* margin: 50px 20px 250% auto; */
+      word-wrap: break-word;
+      text-align: right;
+      visibility: hidden;
+      margin: 50px 20px 250% auto;
+      vertical-align: middle;
+    }
+    .logo-nav:after {
+      content: "TOTO TATUER";
+      visibility: visible;
     }
     .navbar {
       margin: 20px;
@@ -255,7 +256,7 @@ p a {
       margin: 20px;
     }
     #rights {
-      text-align: right;
+      text-align: center;
     }
     #header-responsive {
       z-index: 100;
